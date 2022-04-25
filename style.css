@@ -9,7 +9,7 @@
 
 body {
   background-image: url("mesh.jpg");
-  background-size: cover;
+  background-size: 200% 100%;
   padding: 10%;
   font-family: 'pt_serifregular';
   font-size: 120%;
