@@ -1,22 +1,33 @@
 @font-face {
-    font-family: 'loraregular';
-    src: url('/fonts/lora-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/fonts/lora-variablefont_wght-webfont.woff') format('woff');
+    font-family: 'pt_serifregular';
+    src: url('./fonts/ptserif-regular-webfont.woff2') format('woff2'),
+         url('./fonts/ptserif-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
 @font-face {
-    font-family: 'loraitalic';
-    src: url('/fonts/lora-italic-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/fonts/lora-italic-variablefont_wght-webfont.woff') format('woff');
+    font-family: 'pt_serifitalic';
+    src: url('./fonts/ptserif-italic-webfont.woff2') format('woff2'),
+         url('./fonts/ptserif-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
+}
+
+body {
+  background-image: url("mesh.jpg");
+  background-size: cover;
+  padding: 10%;
+  font-family: 'pt_serifregular';
+  font-size: 120%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1 {
   margin-block-end: 8em;
-  letter-spacing: 2;
 }
 
 h2 {
@@ -27,7 +38,7 @@ h2 {
 
 h3 {
   margin-block-start: 3em;
-  font-size: 1em;
+  font-size: .95em;
   margin-block-end: 0em;
   letter-spacing: 3;
   text-transform: uppercase;
@@ -39,16 +50,6 @@ p {
   margin-block-end: 3em;
   letter-spacing: 1;
   line-height: 1.5;
-}
-
-body {
-  background-image: url("mesh.jpg");
-  background-size: cover;
-  padding: 10%;
-  font-family: 'loraregular';
-  font-size: 120%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 @media screen
@@ -64,11 +65,11 @@ and (max-width: 600px) {
   h2 {
     font-size: 1.35em;
     margin-block-start: 5em;
-    margin-block-end: .5em;
+    margin-block-end: 2em;
   }
 
   h3 {
-    font-size: .9em;
+    font-size: .85em;
     margin-block-start: 2em;
     margin-block-end: 0em;
   }
